@@ -1,6 +1,7 @@
 site_name: Servidor propio — Infraestructura blindada
 site_description: Guía paso a paso para desplegar servicios autoalojados y seguros con software libre
 site_author: Sergio
+site_url: https://sergiocofe.github.io/servidor-propio/
 # site_url lo ajustaremos en el paso de publicación
 
 theme:
@@ -51,6 +52,7 @@ markdown_extensions:
       alternate_style: true
 
 nav:
+nav:
   - Inicio: index.md
   - 01 · Proxmox y VM: 01-proxmox-y-vm.md
   - 02 · Docker y Portainer: 02-docker-portainer.md
@@ -60,3 +62,11 @@ nav:
   - 06 · Netdata: 06-netdata.md
   - 07 · Dozzle: 07-dozzle.md
   - 08 · Homepage: 08-homepage.md
+  - 09 · AdGuard Home: 09-adguard-home.md
+  - 10 · Fail2ban: 10-fail2ban.md
+  - 11 · WireGuard (VPN): 11-wireguard.md
+  - 12 · Authentik (SSO): 12-authentik.md
+  - 13 · Vaultwarden: 13-vaultwarden.md
+  - 14 · Nextcloud: 14-nextcloud.md
+  - 15 · n8n: 15-n8n.md
+  - 16 · BorgBackup: 16-borgbackup.md
