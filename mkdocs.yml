@@ -1,0 +1,62 @@
+site_name: Servidor propio — Infraestructura blindada
+site_description: Guía paso a paso para desplegar servicios autoalojados y seguros con software libre
+site_author: Sergio
+# site_url lo ajustaremos en el paso de publicación
+
+theme:
+  name: material
+  language: es
+  palette:
+    # Modo oscuro (por defecto) — estética fortaleza
+    - scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+    # Modo claro
+    - scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
+  features:
+    - navigation.top         # botón "volver arriba"
+    - navigation.footer      # enlaces anterior/siguiente al pie
+    - search.suggest
+    - search.highlight
+    - content.code.copy      # botón copiar en cada bloque de código
+    - toc.follow
+  icon:
+    logo: material/shield-lock
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - admonition               # cajas de aviso/nota/peligro
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Inicio: index.md
+  - 01 · Proxmox y VM: 01-proxmox-y-vm.md
+  - 02 · Docker y Portainer: 02-docker-portainer.md
+  - 03 · Nginx Proxy Manager: 03-nginx-proxy-manager.md
+  - 04 · SSL con Step-CA: 04-ssl-step-ca.md
+  - 05 · Uptime Kuma: 05-uptime-kuma.md
+  - 06 · Netdata: 06-netdata.md
+  - 07 · Dozzle: 07-dozzle.md
+  - 08 · Homepage: 08-homepage.md
