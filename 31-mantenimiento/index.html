@@ -12,13 +12,11 @@
         <meta name="author" content="Sergio">
       
       
-        <link rel="canonical" href="https://sergiocofe.github.io/Servidor-Propio/01-proxmox-y-vm/">
+        <link rel="canonical" href="https://sergiocofe.github.io/Servidor-Propio/31-mantenimiento/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../30-mapa-de-puertos/">
       
-      
-        <link rel="next" href="../02-docker-portainer/">
       
       
         
@@ -29,7 +27,7 @@
     
     
       
-        <title>01 · Proxmox y VM - Servidor propio — Infraestructura blindada</title>
+        <title>31 · Mantenimiento e incidencias - Servidor propio — Infraestructura blindada</title>
       
     
     
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01-proxmox-y-maquina-virtual" class="md-skip">
+        <a href="#31-mantenimiento-e-incidencias" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -116,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              01 · Proxmox y VM
+              31 · Mantenimiento e incidencias
             
           </span>
         </div>
@@ -264,20 +262,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -298,7 +294,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -313,37 +309,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    01 · Proxmox y VM
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01-proxmox-y-vm/" class="md-nav__link">
         
   
   
@@ -359,120 +328,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-acceso-a-proxmox-host" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Acceso a Proxmox (host)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-recursos-de-hardware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Recursos de hardware
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-especificaciones-de-la-vm-docker-master" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Especificaciones de la VM (Docker-Master)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-creacion-de-la-vm-paso-a-paso" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Creación de la VM (paso a paso)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-instalacion-del-sistema-operativo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Instalación del sistema operativo
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Instalación del sistema operativo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-red-estatica" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 Red estática
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-usuario-y-almacenamiento" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2 Usuario y almacenamiento
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53-servicios-esenciales" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.3 Servicios esenciales
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1489,18 +1344,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1521,7 +1378,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1564,10 +1421,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../31-mantenimiento/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    31 · Mantenimiento e incidencias
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1583,6 +1467,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-el-disco-de-sistema-se-llena-mover-docker-y-containerd-a-mntdata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. El disco de sistema se llena: mover Docker y containerd a /mnt/data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. El disco de sistema se llena: mover Docker y containerd a /mnt/data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-docker-varlibdocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Docker (/var/lib/docker)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-containerd-varlibcontainerd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 containerd (/var/lib/containerd)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tras-reiniciar-containerd-todos-los-contenedores-quedan-exited-128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Tras reiniciar containerd, todos los contenedores quedan "Exited (128)"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-procesos-de-base-de-datos-duplicados-y-silenciosos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ⚠️ Procesos de base de datos duplicados y silenciosos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ⚠️ Procesos de base de datos duplicados y silenciosos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deteccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detección
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-watchtower-en-bucle-de-reinicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Watchtower en bucle de reinicio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-rutina-de-revision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Rutina de revisión
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1622,66 +1626,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-acceso-a-proxmox-host" class="md-nav__link">
+  <a href="#1-el-disco-de-sistema-se-llena-mover-docker-y-containerd-a-mntdata" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Acceso a Proxmox (host)
+        1. El disco de sistema se llena: mover Docker y containerd a /mnt/data
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-recursos-de-hardware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Recursos de hardware
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-especificaciones-de-la-vm-docker-master" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Especificaciones de la VM (Docker-Master)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-creacion-de-la-vm-paso-a-paso" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Creación de la VM (paso a paso)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-instalacion-del-sistema-operativo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Instalación del sistema operativo
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Instalación del sistema operativo">
+    <nav class="md-nav" aria-label="1. El disco de sistema se llena: mover Docker y containerd a /mnt/data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#51-red-estatica" class="md-nav__link">
+  <a href="#11-docker-varlibdocker" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.1 Red estática
+        1.1 Docker (/var/lib/docker)
       
     </span>
   </a>
@@ -1689,21 +1649,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#52-usuario-y-almacenamiento" class="md-nav__link">
+  <a href="#12-containerd-varlibcontainerd" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5.2 Usuario y almacenamiento
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53-servicios-esenciales" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.3 Servicios esenciales
+        1.2 containerd (/var/lib/containerd)
       
     </span>
   </a>
@@ -1712,6 +1661,67 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-tras-reiniciar-containerd-todos-los-contenedores-quedan-exited-128" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Tras reiniciar containerd, todos los contenedores quedan "Exited (128)"
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-procesos-de-base-de-datos-duplicados-y-silenciosos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. ⚠️ Procesos de base de datos duplicados y silenciosos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. ⚠️ Procesos de base de datos duplicados y silenciosos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deteccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Detección
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-watchtower-en-bucle-de-reinicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Watchtower en bucle de reinicio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-rutina-de-revision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Rutina de revisión
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1732,159 +1742,121 @@
 
 
 
-<h1 id="01-proxmox-y-maquina-virtual">01 · Proxmox y máquina virtual<a class="headerlink" href="#01-proxmox-y-maquina-virtual" title="Permanent link">&para;</a></h1>
-<p>Preparamos el host Proxmox y creamos la máquina virtual Ubuntu que alojará todos los contenedores Docker.</p>
+<h1 id="31-mantenimiento-e-incidencias">31 · Mantenimiento e incidencias<a class="headerlink" href="#31-mantenimiento-e-incidencias" title="Permanent link">&para;</a></h1>
+<p>Procedimientos y lecciones aprendidas de incidencias reales del servidor.</p>
 <hr />
-<h2 id="1-acceso-a-proxmox-host">1. Acceso a Proxmox (host)<a class="headerlink" href="#1-acceso-a-proxmox-host" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parámetro</th>
-<th>Valor</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>URL de acceso</strong></td>
-<td><code>https://IP_PROXMOX:8006</code></td>
-</tr>
-<tr>
-<td><strong>Usuario</strong></td>
-<td><code>root</code></td>
-</tr>
-<tr>
-<td><strong>Contraseña</strong></td>
-<td><code>Contraseña_Proxmox</code></td>
-</tr>
-<tr>
-<td><strong>Nodo</strong></td>
-<td><code>casa</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="2-recursos-de-hardware">2. Recursos de hardware<a class="headerlink" href="#2-recursos-de-hardware" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Disco SSD (sistema):</strong> <code>local-lvm</code> / <code>m22</code></li>
-<li><strong>Disco HDD (datos/multimedia):</strong> <code>mecanico</code> (1 TB)</li>
-<li><strong>Red:</strong> <code>vmbr0</code> (rango <code>192.168.88.x</code>)</li>
-</ul>
-<h2 id="3-especificaciones-de-la-vm-docker-master">3. Especificaciones de la VM (Docker-Master)<a class="headerlink" href="#3-especificaciones-de-la-vm-docker-master" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Parámetro</th>
-<th>Valor</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>ID</strong></td>
-<td><code>200</code></td>
-</tr>
-<tr>
-<td><strong>Nombre</strong></td>
-<td><code>Ubuntu-Docker</code></td>
-</tr>
-<tr>
-<td><strong>CPU</strong></td>
-<td>4 cores</td>
-</tr>
-<tr>
-<td><strong>RAM</strong></td>
-<td>8 GB</td>
-</tr>
-<tr>
-<td><strong>Disco</strong></td>
-<td>80 GB (en almacenamiento <code>m22</code>)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="4-creacion-de-la-vm-paso-a-paso">4. Creación de la VM (paso a paso)<a class="headerlink" href="#4-creacion-de-la-vm-paso-a-paso" title="Permanent link">&para;</a></h2>
-<p>Sigue el asistente <strong>Create VM</strong> en Proxmox con estos parámetros:</p>
-<table>
-<thead>
-<tr>
-<th>Pestaña</th>
-<th>Configuración</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>General</strong></td>
-<td>ID <code>200</code>, nombre <code>Ubuntu-Docker</code></td>
-</tr>
-<tr>
-<td><strong>OS</strong></td>
-<td>Seleccionar la ISO de Ubuntu Server</td>
-</tr>
-<tr>
-<td><strong>Sistema</strong></td>
-<td>Valores por defecto</td>
-</tr>
-<tr>
-<td><strong>Discos</strong></td>
-<td>Almacenamiento <code>m22</code> (SSD), tamaño <strong>80 GB</strong></td>
-</tr>
-<tr>
-<td><strong>CPU</strong></td>
-<td>Núcleos: <strong>4</strong> · Tipo: <code>host</code> (maximiza instrucciones AES)</td>
-</tr>
-<tr>
-<td><strong>Memoria</strong></td>
-<td><strong>8192 MB</strong> · ⚠️ desmarcar <strong>Ballooning</strong> para memoria dedicada</td>
-</tr>
-<tr>
-<td><strong>Red</strong></td>
-<td>Bridge <code>vmbr0</code>, modelo <code>VirtIO</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="5-instalacion-del-sistema-operativo">5. Instalación del sistema operativo<a class="headerlink" href="#5-instalacion-del-sistema-operativo" title="Permanent link">&para;</a></h2>
-<p>Durante la instalación de Ubuntu en la consola:</p>
-<h3 id="51-red-estatica">5.1 Red estática<a class="headerlink" href="#51-red-estatica" title="Permanent link">&para;</a></h3>
-<p>Un servidor necesita IP fija para que los servicios sean accesibles de forma permanente.</p>
-<table>
-<thead>
-<tr>
-<th>Parámetro</th>
-<th>Valor</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>IPv4 Method</strong></td>
-<td>Manual</td>
-</tr>
-<tr>
-<td><strong>Subnet</strong></td>
-<td><code>192.168.88.0/24</code></td>
-</tr>
-<tr>
-<td><strong>Address (IP de la VM)</strong></td>
-<td><code>IP_UBUNTU</code></td>
-</tr>
-<tr>
-<td><strong>Gateway</strong></td>
-<td><code>192.168.88.1</code></td>
-</tr>
-<tr>
-<td><strong>DNS</strong></td>
-<td><code>1.1.1.1</code>, <code>8.8.8.8</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="52-usuario-y-almacenamiento">5.2 Usuario y almacenamiento<a class="headerlink" href="#52-usuario-y-almacenamiento" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Usuario:</strong> <code>Usuario_Ubuntu</code></li>
-<li><strong>Contraseña:</strong> <code>Contraseña_Usuario</code></li>
-<li><strong>Disco:</strong> marca <strong>Use an entire disk</strong> y <strong>DESMARCA</strong> <em>Set up this disk as an LVM group</em>. Simplifica el particionado para Docker.</li>
-</ul>
-<h3 id="53-servicios-esenciales">5.3 Servicios esenciales<a class="headerlink" href="#53-servicios-esenciales" title="Permanent link">&para;</a></h3>
+<h2 id="1-el-disco-de-sistema-se-llena-mover-docker-y-containerd-a-mntdata">1. El disco de sistema se llena: mover Docker y containerd a <code>/mnt/data</code><a class="headerlink" href="#1-el-disco-de-sistema-se-llena-mover-docker-y-containerd-a-mntdata" title="Permanent link">&para;</a></h2>
+<p>Con el uso normal (imágenes, actualizaciones, logs), un disco de sistema pequeño acaba en <em>"no space left on device"</em>: se caen bases de datos y fallan las actualizaciones. La solución es mover el almacenamiento de Docker <strong>y</strong> el de containerd al disco de datos.</p>
+<h3 id="11-docker-varlibdocker">1.1 Docker (<code>/var/lib/docker</code>)<a class="headerlink" href="#11-docker-varlibdocker" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>docker<span class="w"> </span>docker.socket
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>rsync<span class="w"> </span>-aHAX<span class="w"> </span>/var/lib/docker/<span class="w"> </span>/mnt/data/docker/
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/docker/daemon.json
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span><span class="nt">&quot;data-root&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/mnt/data/docker&quot;</span><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>docker
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>docker<span class="w"> </span>info<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;Docker Root Dir&quot;</span><span class="w">          </span><span class="c1"># → /mnt/data/docker</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>sudo<span class="w"> </span>du<span class="w"> </span>-sh<span class="w"> </span>/var/lib/docker<span class="w"> </span>/mnt/data/docker<span class="w">  </span><span class="c1"># deben coincidir</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>sudo<span class="w"> </span>mv<span class="w"> </span>/var/lib/docker<span class="w"> </span>/var/lib/docker.old<span class="w">   </span><span class="c1"># copia de seguridad unos días</span>
+</code></pre></div>
+<h3 id="12-containerd-varlibcontainerd">1.2 containerd (<code>/var/lib/containerd</code>)<a class="headerlink" href="#12-containerd-varlibcontainerd" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
-<p class="admonition-title">SSH obligatorio</p>
-<p>Activa la casilla <strong>[X] Install OpenSSH server</strong>. Permite la administración remota por terminal (PuTTY o VS Code).</p>
+<p class="admonition-title">Cambiar el <code>data-root</code> de Docker NO mueve containerd</p>
+<p>containerd es un servicio aparte con su propia configuración. Si no lo mueves, la siguiente actualización vuelve a llenar el disco de sistema.</p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>docker<span class="w"> </span>docker.socket<span class="w"> </span>containerd
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>rsync<span class="w"> </span>-aHAX<span class="w"> </span>/var/lib/containerd/<span class="w"> </span>/mnt/data/containerd/
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sudo<span class="w"> </span>nano<span class="w"> </span>/etc/containerd/config.toml
+</code></pre></div>
+<p>La línea <code>root</code> viene <strong>comentada</strong> por defecto (<code>#root = "/var/lib/containerd"</code>). Descoméntala y cambia la ruta:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;/mnt/data/containerd&quot;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>containerd<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>docker
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>sudo<span class="w"> </span>mv<span class="w"> </span>/var/lib/containerd<span class="w"> </span>/var/lib/containerd.old
+</code></pre></div>
+<p>Verifica con un <code>docker compose pull</code> de cualquier servicio que los datos nuevos se escriben en <code>/mnt/data/containerd</code>.</p>
+<p>Pasados unos días estable, borra las copias:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>du<span class="w"> </span>-sh<span class="w"> </span>/var/lib/*.old<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>sudo<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/var/lib/docker.old<span class="w"> </span>/var/lib/containerd.old
+</code></pre></div>
+<h2 id="2-tras-reiniciar-containerd-todos-los-contenedores-quedan-exited-128">2. Tras reiniciar containerd, todos los contenedores quedan "Exited (128)"<a class="headerlink" href="#2-tras-reiniciar-containerd-todos-los-contenedores-quedan-exited-128" title="Permanent link">&para;</a></h2>
+<p>containerd pierde la referencia a los procesos en marcha. Los datos están intactos, pero Compose no los recrea solo. Relánzalos todos:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">cd</span><span class="w"> </span>~/docker
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">for</span><span class="w"> </span>d<span class="w"> </span><span class="k">in</span><span class="w"> </span>*/<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;=== </span><span class="nv">$d</span><span class="s2"> ===&quot;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="o">(</span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$d</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="o">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">done</span>
+</code></pre></div>
+<p>No descarga imágenes (están en caché): solo recrea los contenedores.</p>
+<h2 id="3-procesos-de-base-de-datos-duplicados-y-silenciosos">3. ⚠️ Procesos de base de datos duplicados y silenciosos<a class="headerlink" href="#3-procesos-de-base-de-datos-duplicados-y-silenciosos" title="Permanent link">&para;</a></h2>
+<p>Tras el paso anterior, pueden quedar <strong>procesos huérfanos</strong> de la tanda anterior (<code>mariadbd</code>, <code>postgres</code>, <code>redis-server</code>) corriendo en paralelo a los nuevos contra <strong>los mismos ficheros de datos</strong>: riesgo real de corrupción.</p>
+<ul>
+<li>MariaDB lo delata: <em>"Can't lock aria control file ... error: 11"</em> y bucle de reinicio.</li>
+<li><strong>PostgreSQL y Redis no dan ningún error visible.</strong> Solo se detectan comparando procesos.</li>
+</ul>
+<h3 id="deteccion">Detección<a class="headerlink" href="#deteccion" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 1. PID oficial según Docker de cada contenedor con base de datos</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">for</span><span class="w"> </span>c<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span>docker<span class="w"> </span>ps<span class="w"> </span>--format<span class="w"> </span><span class="s1">&#39;{{.Names}}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-Ei<span class="w"> </span><span class="s1">&#39;db|redis|postgres&#39;</span><span class="k">)</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2"> =&gt; </span><span class="k">$(</span>docker<span class="w"> </span>inspect<span class="w"> </span>--format<span class="w"> </span><span class="s1">&#39;{{.State.Pid}}&#39;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$c</span><span class="s2">&quot;</span><span class="k">)</span><span class="s2">&quot;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">done</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># 2. Procesos reales en el host</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>ps<span class="w"> </span>-eo<span class="w"> </span>pid,lstart,cmd<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s2">&quot;mariadbd|postgres:|redis-server&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep
+</code></pre></div>
+<p>Un proceso principal cuya <strong>hora de arranque es muy anterior</strong> al resto y cuyo PID no corresponde a ningún contenedor es un huérfano:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>-9<span class="w"> </span>PID_HUERFANO_1<span class="w"> </span>PID_HUERFANO_2
+</code></pre></div>
+<p>Sus procesos hijos (checkpointer, walwriter, conexiones <em>idle</em>...) desaparecen solos.</p>
+<div class="admonition danger">
+<p class="admonition-title">Repite esta comprobación siempre</p>
+<p>Hazla tras <strong>cualquier reinicio de <code>containerd</code> o <code>dockerd</code> a nivel de sistema</strong>. Si llegó a haber duplicados durante un tiempo, revisa después la integridad de las aplicaciones afectadas (que no falten archivos o fotos recientes) y ten a mano la última copia de <a href="../16-borgbackup/">16 · BorgBackup</a>.</p>
+</div>
+<h2 id="4-watchtower-en-bucle-de-reinicio">4. Watchtower en bucle de reinicio<a class="headerlink" href="#4-watchtower-en-bucle-de-reinicio" title="Permanent link">&para;</a></h2>
+<p><code>client version 1.25 is too old</code> → la imagen <code>containrrr/watchtower</code> está abandonada. Cambia al fork mantenido (ver <a href="../18-watchtower/">18 · Watchtower</a>).</p>
+<h2 id="5-rutina-de-revision">5. Rutina de revisión<a class="headerlink" href="#5-rutina-de-revision" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Frecuencia</th>
+<th>Tarea</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Semanal</td>
+<td><code>docker logs watchtower --since 7d</code>: qué se actualizó y si algo falló</td>
+</tr>
+<tr>
+<td>Semanal</td>
+<td>Revisar Uptime Kuma y <code>sudo cscli alerts list</code></td>
+</tr>
+<tr>
+<td>Mensual</td>
+<td><code>df -h /</code> y <code>df -h /mnt/data</code>; <code>docker system df</code></td>
+</tr>
+<tr>
+<td>Mensual</td>
+<td>Actualizar a mano lo excluido de Watchtower (bases de datos, Immich), tras una copia</td>
+</tr>
+<tr>
+<td>Mensual</td>
+<td><code>borg check</code> y una restauración de prueba</td>
+</tr>
+<tr>
+<td>Tras reiniciar Docker/containerd</td>
+<td>Diagnóstico de procesos duplicados (apartado 3)</td>
+</tr>
+<tr>
+<td>Anual</td>
+<td>Revisar caducidad de certificados de Step-CA y del certificado raíz</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Limpieza de espacio</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>image<span class="w"> </span>prune<span class="w"> </span>-a<span class="w">      </span><span class="c1"># imágenes sin usar (pide confirmación)</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>docker<span class="w"> </span>builder<span class="w"> </span>prune<span class="w">       </span><span class="c1"># caché de builds</span>
+</code></pre></div>
 </div>
 
 
@@ -1921,7 +1893,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Anterior: Inicio">
+          <a href="../30-mapa-de-puertos/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 30 · Mapa de puertos">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1931,27 +1903,11 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Inicio
+                30 · Mapa de puertos
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../02-docker-portainer/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 02 · Docker y Portainer">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Siguiente
-              </span>
-              <div class="md-ellipsis">
-                02 · Docker y Portainer
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     

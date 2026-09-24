@@ -1,71 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/01-proxmox-y-vm/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/01-proxmox-y-vm/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/02-docker-portainer/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/02-docker-portainer/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/03-nginx-proxy-manager/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/03-nginx-proxy-manager/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/04-ssl-step-ca/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/04-ssl-step-ca/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/05-uptime-kuma/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/05-uptime-kuma/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/06-netdata/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/06-netdata/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/07-dozzle/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/07-dozzle/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/08-homepage/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/08-homepage/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/09-adguard-home/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/09-adguard-home/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/10-fail2ban/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/10-fail2ban/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/11-wireguard/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/11-wireguard/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/12-authentik/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/12-authentik/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/13-vaultwarden/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/13-vaultwarden/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/14-nextcloud/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/14-nextcloud/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/15-n8n/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/15-n8n/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
     <url>
-         <loc>https://sergiocofe.github.io/servidor-propio/16-borgbackup/</loc>
-         <lastmod>2026-06-03</lastmod>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/16-borgbackup/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/17-crowdsec-ufw/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/18-watchtower/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/19-jellyfin/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/20-qbittorrent/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/21-metube/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/22-audiobookshelf/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/23-paperless/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/24-immich/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/25-stirling-pdf/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/26-wallos/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/27-grocy/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/28-it-tools/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/29-home-assistant/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/30-mapa-de-puertos/</loc>
+         <lastmod>2026-09-24</lastmod>
+    </url>
+    <url>
+         <loc>https://sergiocofe.github.io/Servidor-Propio/31-mantenimiento/</loc>
+         <lastmod>2026-09-24</lastmod>
     </url>
 </urlset>

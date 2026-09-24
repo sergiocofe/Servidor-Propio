@@ -12,13 +12,13 @@
         <meta name="author" content="Sergio">
       
       
-        <link rel="canonical" href="https://sergiocofe.github.io/Servidor-Propio/01-proxmox-y-vm/">
+        <link rel="canonical" href="https://sergiocofe.github.io/Servidor-Propio/30-mapa-de-puertos/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../29-home-assistant/">
       
       
-        <link rel="next" href="../02-docker-portainer/">
+        <link rel="next" href="../31-mantenimiento/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>01 · Proxmox y VM - Servidor propio — Infraestructura blindada</title>
+        <title>30 · Mapa de puertos - Servidor propio — Infraestructura blindada</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#01-proxmox-y-maquina-virtual" class="md-skip">
+        <a href="#30-mapa-de-puertos" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              01 · Proxmox y VM
+              30 · Mapa de puertos
             
           </span>
         </div>
@@ -264,20 +264,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -298,7 +296,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -313,37 +311,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    01 · Proxmox y VM
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../01-proxmox-y-vm/" class="md-nav__link">
         
   
   
@@ -359,120 +330,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-acceso-a-proxmox-host" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Acceso a Proxmox (host)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-recursos-de-hardware" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Recursos de hardware
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-especificaciones-de-la-vm-docker-master" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Especificaciones de la VM (Docker-Master)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-creacion-de-la-vm-paso-a-paso" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Creación de la VM (paso a paso)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-instalacion-del-sistema-operativo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Instalación del sistema operativo
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Instalación del sistema operativo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-red-estatica" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 Red estática
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-usuario-y-almacenamiento" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2 Usuario y almacenamiento
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53-servicios-esenciales" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.3 Servicios esenciales
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1489,18 +1346,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1521,7 +1380,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1536,10 +1395,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../30-mapa-de-puertos/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    30 · Mapa de puertos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1555,6 +1441,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#infraestructura-y-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infraestructura y seguridad
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitorización
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicaciones
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuera-del-servidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fuera del servidor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conflictos-resueltos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conflictos resueltos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1622,10 +1583,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-acceso-a-proxmox-host" class="md-nav__link">
+  <a href="#infraestructura-y-seguridad" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Acceso a Proxmox (host)
+        Infraestructura y seguridad
       
     </span>
   </a>
@@ -1633,10 +1594,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-recursos-de-hardware" class="md-nav__link">
+  <a href="#monitorizacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Recursos de hardware
+        Monitorización
       
     </span>
   </a>
@@ -1644,10 +1605,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-especificaciones-de-la-vm-docker-master" class="md-nav__link">
+  <a href="#aplicaciones" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Especificaciones de la VM (Docker-Master)
+        Aplicaciones
       
     </span>
   </a>
@@ -1655,10 +1616,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-creacion-de-la-vm-paso-a-paso" class="md-nav__link">
+  <a href="#fuera-del-servidor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Creación de la VM (paso a paso)
+        Fuera del servidor
       
     </span>
   </a>
@@ -1666,52 +1627,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-instalacion-del-sistema-operativo" class="md-nav__link">
+  <a href="#conflictos-resueltos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Instalación del sistema operativo
+        Conflictos resueltos
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="5. Instalación del sistema operativo">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#51-red-estatica" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.1 Red estática
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#52-usuario-y-almacenamiento" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.2 Usuario y almacenamiento
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#53-servicios-esenciales" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5.3 Servicios esenciales
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1732,159 +1654,272 @@
 
 
 
-<h1 id="01-proxmox-y-maquina-virtual">01 · Proxmox y máquina virtual<a class="headerlink" href="#01-proxmox-y-maquina-virtual" title="Permanent link">&para;</a></h1>
-<p>Preparamos el host Proxmox y creamos la máquina virtual Ubuntu que alojará todos los contenedores Docker.</p>
-<hr />
-<h2 id="1-acceso-a-proxmox-host">1. Acceso a Proxmox (host)<a class="headerlink" href="#1-acceso-a-proxmox-host" title="Permanent link">&para;</a></h2>
+<h1 id="30-mapa-de-puertos">30 · Mapa de puertos<a class="headerlink" href="#30-mapa-de-puertos" title="Permanent link">&para;</a></h1>
+<p>Referencia rápida de <strong>qué puerto usa cada servicio</strong> en el host (<code>IP_UBUNTU</code>). Consúltala antes de desplegar algo nuevo para no provocar conflictos.</p>
+<div class="admonition note">
+<p class="admonition-title">Solo NPM se usa desde fuera</p>
+<p>Todos los servicios web se usan a través de Nginx Proxy Manager (<code>https://servicio.lan</code>, puerto 443). Los puertos de esta tabla son el <strong>destino interno</strong> de cada Proxy Host.</p>
+</div>
+<h2 id="infraestructura-y-seguridad">Infraestructura y seguridad<a class="headerlink" href="#infraestructura-y-seguridad" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Parámetro</th>
-<th>Valor</th>
+<th>Servicio</th>
+<th>Puerto(s) host</th>
+<th>Dominio</th>
+<th>Sección</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>URL de acceso</strong></td>
-<td><code>https://IP_PROXMOX:8006</code></td>
+<td>SSH</td>
+<td>22222/tcp</td>
+<td>—</td>
+<td><a href="../01-proxmox-y-vm/">01</a></td>
 </tr>
 <tr>
-<td><strong>Usuario</strong></td>
-<td><code>root</code></td>
+<td>DNS (AdGuard Home)</td>
+<td>53/tcp+udp</td>
+<td>—</td>
+<td><a href="../09-adguard-home/">09</a></td>
 </tr>
 <tr>
-<td><strong>Contraseña</strong></td>
-<td><code>Contraseña_Proxmox</code></td>
+<td>AdGuard Home (panel)</td>
+<td>3000</td>
+<td><code>adguard.lan</code></td>
+<td><a href="../09-adguard-home/">09</a></td>
 </tr>
 <tr>
-<td><strong>Nodo</strong></td>
-<td><code>casa</code></td>
+<td>Nginx Proxy Manager</td>
+<td>80, 443, 81 (panel)</td>
+<td><code>nginx.lan</code></td>
+<td><a href="../03-nginx-proxy-manager/">03</a></td>
+</tr>
+<tr>
+<td>Portainer</td>
+<td>9443, 8000</td>
+<td><code>portainer.lan</code></td>
+<td><a href="../02-docker-portainer/">02</a></td>
+</tr>
+<tr>
+<td>Step-CA</td>
+<td>9000</td>
+<td>—</td>
+<td><a href="../04-ssl-step-ca/">04</a></td>
+</tr>
+<tr>
+<td>Authentik</td>
+<td>9200 (HTTP), 9201 (HTTPS)</td>
+<td><code>authentik.lan</code></td>
+<td><a href="../12-authentik/">12</a></td>
+</tr>
+<tr>
+<td>CrowdSec (API local)</td>
+<td>8091 (solo <code>127.0.0.1</code>)</td>
+<td>—</td>
+<td><a href="../17-crowdsec-ufw/">17</a></td>
+</tr>
+<tr>
+<td>Proxy del socket Docker</td>
+<td>— (solo red <code>socket_proxy</code>)</td>
+<td>—</td>
+<td><a href="../02-docker-portainer/">02</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="2-recursos-de-hardware">2. Recursos de hardware<a class="headerlink" href="#2-recursos-de-hardware" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Disco SSD (sistema):</strong> <code>local-lvm</code> / <code>m22</code></li>
-<li><strong>Disco HDD (datos/multimedia):</strong> <code>mecanico</code> (1 TB)</li>
-<li><strong>Red:</strong> <code>vmbr0</code> (rango <code>192.168.88.x</code>)</li>
-</ul>
-<h2 id="3-especificaciones-de-la-vm-docker-master">3. Especificaciones de la VM (Docker-Master)<a class="headerlink" href="#3-especificaciones-de-la-vm-docker-master" title="Permanent link">&para;</a></h2>
+<h2 id="monitorizacion">Monitorización<a class="headerlink" href="#monitorizacion" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Parámetro</th>
-<th>Valor</th>
+<th>Servicio</th>
+<th>Puerto host</th>
+<th>Dominio</th>
+<th>Sección</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>ID</strong></td>
-<td><code>200</code></td>
+<td>Uptime Kuma</td>
+<td>3001</td>
+<td><code>uptime.lan</code></td>
+<td><a href="../05-uptime-kuma/">05</a></td>
 </tr>
 <tr>
-<td><strong>Nombre</strong></td>
-<td><code>Ubuntu-Docker</code></td>
+<td>Netdata</td>
+<td>19999</td>
+<td><code>netdata.lan</code></td>
+<td><a href="../06-netdata/">06</a></td>
 </tr>
 <tr>
-<td><strong>CPU</strong></td>
-<td>4 cores</td>
+<td>Dozzle</td>
+<td>8888</td>
+<td><code>logs.lan</code></td>
+<td><a href="../07-dozzle/">07</a></td>
 </tr>
 <tr>
-<td><strong>RAM</strong></td>
-<td>8 GB</td>
-</tr>
-<tr>
-<td><strong>Disco</strong></td>
-<td>80 GB (en almacenamiento <code>m22</code>)</td>
+<td>Homepage</td>
+<td>3005</td>
+<td><code>home.lan</code></td>
+<td><a href="../08-homepage/">08</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="4-creacion-de-la-vm-paso-a-paso">4. Creación de la VM (paso a paso)<a class="headerlink" href="#4-creacion-de-la-vm-paso-a-paso" title="Permanent link">&para;</a></h2>
-<p>Sigue el asistente <strong>Create VM</strong> en Proxmox con estos parámetros:</p>
+<h2 id="aplicaciones">Aplicaciones<a class="headerlink" href="#aplicaciones" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Pestaña</th>
-<th>Configuración</th>
+<th>Servicio</th>
+<th>Puerto host</th>
+<th>Dominio</th>
+<th>Sección</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>General</strong></td>
-<td>ID <code>200</code>, nombre <code>Ubuntu-Docker</code></td>
+<td>Vaultwarden</td>
+<td>8080</td>
+<td><code>vault.lan</code></td>
+<td><a href="../13-vaultwarden/">13</a></td>
 </tr>
 <tr>
-<td><strong>OS</strong></td>
-<td>Seleccionar la ISO de Ubuntu Server</td>
+<td>MeTube</td>
+<td>8081</td>
+<td><code>metube.lan</code></td>
+<td><a href="../21-metube/">21</a></td>
 </tr>
 <tr>
-<td><strong>Sistema</strong></td>
-<td>Valores por defecto</td>
+<td>Nextcloud</td>
+<td>8082</td>
+<td><code>nextcloud.lan</code></td>
+<td><a href="../14-nextcloud/">14</a></td>
 </tr>
 <tr>
-<td><strong>Discos</strong></td>
-<td>Almacenamiento <code>m22</code> (SSD), tamaño <strong>80 GB</strong></td>
+<td>Paperless-ngx</td>
+<td>8083</td>
+<td><code>paperless.lan</code></td>
+<td><a href="../23-paperless/">23</a></td>
 </tr>
 <tr>
-<td><strong>CPU</strong></td>
-<td>Núcleos: <strong>4</strong> · Tipo: <code>host</code> (maximiza instrucciones AES)</td>
+<td>Stirling PDF</td>
+<td>8084</td>
+<td><code>pdf.lan</code></td>
+<td><a href="../25-stirling-pdf/">25</a></td>
 </tr>
 <tr>
-<td><strong>Memoria</strong></td>
-<td><strong>8192 MB</strong> · ⚠️ desmarcar <strong>Ballooning</strong> para memoria dedicada</td>
+<td>Wallos</td>
+<td>8085</td>
+<td><code>wallos.lan</code></td>
+<td><a href="../26-wallos/">26</a></td>
 </tr>
 <tr>
-<td><strong>Red</strong></td>
-<td>Bridge <code>vmbr0</code>, modelo <code>VirtIO</code></td>
+<td>Grocy</td>
+<td>8086</td>
+<td><code>grocy.lan</code></td>
+<td><a href="../27-grocy/">27</a></td>
+</tr>
+<tr>
+<td>IT-Tools</td>
+<td>8087</td>
+<td><code>tools.lan</code></td>
+<td><a href="../28-it-tools/">28</a></td>
+</tr>
+<tr>
+<td>Zigbee2MQTT</td>
+<td>8088</td>
+<td><code>zigbee.lan</code></td>
+<td><a href="../29-home-assistant/">29</a></td>
+</tr>
+<tr>
+<td>qBittorrent</td>
+<td>8090 (web), 6881/tcp+udp</td>
+<td><code>torrent.lan</code></td>
+<td><a href="../20-qbittorrent/">20</a></td>
+</tr>
+<tr>
+<td>Jellyfin</td>
+<td>8096</td>
+<td><code>jellyfin.lan</code></td>
+<td><a href="../19-jellyfin/">19</a></td>
+</tr>
+<tr>
+<td>Home Assistant</td>
+<td>8123</td>
+<td><code>ha.lan</code></td>
+<td><a href="../29-home-assistant/">29</a></td>
+</tr>
+<tr>
+<td>Immich</td>
+<td>2283</td>
+<td><code>immich.lan</code></td>
+<td><a href="../24-immich/">24</a></td>
+</tr>
+<tr>
+<td>n8n</td>
+<td>5678</td>
+<td><code>n8n.lan</code></td>
+<td><a href="../15-n8n/">15</a></td>
+</tr>
+<tr>
+<td>Audiobookshelf</td>
+<td>13378</td>
+<td><code>books.lan</code></td>
+<td><a href="../22-audiobookshelf/">22</a></td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="5-instalacion-del-sistema-operativo">5. Instalación del sistema operativo<a class="headerlink" href="#5-instalacion-del-sistema-operativo" title="Permanent link">&para;</a></h2>
-<p>Durante la instalación de Ubuntu en la consola:</p>
-<h3 id="51-red-estatica">5.1 Red estática<a class="headerlink" href="#51-red-estatica" title="Permanent link">&para;</a></h3>
-<p>Un servidor necesita IP fija para que los servicios sean accesibles de forma permanente.</p>
+<h2 id="fuera-del-servidor">Fuera del servidor<a class="headerlink" href="#fuera-del-servidor" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Parámetro</th>
-<th>Valor</th>
+<th>Servicio</th>
+<th>Dónde</th>
+<th>Puerto</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>IPv4 Method</strong></td>
-<td>Manual</td>
-</tr>
-<tr>
-<td><strong>Subnet</strong></td>
-<td><code>192.168.88.0/24</code></td>
-</tr>
-<tr>
-<td><strong>Address (IP de la VM)</strong></td>
-<td><code>IP_UBUNTU</code></td>
-</tr>
-<tr>
-<td><strong>Gateway</strong></td>
-<td><code>192.168.88.1</code></td>
-</tr>
-<tr>
-<td><strong>DNS</strong></td>
-<td><code>1.1.1.1</code>, <code>8.8.8.8</code></td>
+<td>WireGuard (hub)</td>
+<td>VM pública</td>
+<td>51820/udp</td>
 </tr>
 </tbody>
 </table>
-<h3 id="52-usuario-y-almacenamiento">5.2 Usuario y almacenamiento<a class="headerlink" href="#52-usuario-y-almacenamiento" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Usuario:</strong> <code>Usuario_Ubuntu</code></li>
-<li><strong>Contraseña:</strong> <code>Contraseña_Usuario</code></li>
-<li><strong>Disco:</strong> marca <strong>Use an entire disk</strong> y <strong>DESMARCA</strong> <em>Set up this disk as an LVM group</em>. Simplifica el particionado para Docker.</li>
-</ul>
-<h3 id="53-servicios-esenciales">5.3 Servicios esenciales<a class="headerlink" href="#53-servicios-esenciales" title="Permanent link">&para;</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">SSH obligatorio</p>
-<p>Activa la casilla <strong>[X] Install OpenSSH server</strong>. Permite la administración remota por terminal (PuTTY o VS Code).</p>
+<h2 id="conflictos-resueltos">Conflictos resueltos<a class="headerlink" href="#conflictos-resueltos" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Conflicto</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CrowdSec (8080 por defecto) vs Vaultwarden</td>
+<td>CrowdSec → <strong>8091</strong></td>
+</tr>
+<tr>
+<td>Authentik (9000/9443 por defecto) vs Step-CA (9000) y Portainer (9443)</td>
+<td>Authentik → <strong>9200/9201</strong></td>
+</tr>
+<tr>
+<td>qBittorrent (web 8080) vs Vaultwarden</td>
+<td>publicado en <strong>8090</strong> (<code>WEBUI_PORT=8080</code> interno)</td>
+</tr>
+<tr>
+<td>AdGuard Home necesita el 53</td>
+<td>red <code>host</code></td>
+</tr>
+<tr>
+<td><code>python3 -m http.server 8080</code> falla con <em>Address already in use</em></td>
+<td>usa otro puerto libre (8099)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">Comprobar qué está ocupado</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>ss<span class="w"> </span>-tulpn<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>LISTEN
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docker<span class="w"> </span>ps<span class="w"> </span>--format<span class="w"> </span><span class="s1">&#39;table {{.Names}}\t{{.Ports}}&#39;</span>
+</code></pre></div>
 </div>
 
 
@@ -1921,7 +1956,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Anterior: Inicio">
+          <a href="../29-home-assistant/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: 29 · Home Assistant">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1931,20 +1966,20 @@
                 Anterior
               </span>
               <div class="md-ellipsis">
-                Inicio
+                29 · Home Assistant
               </div>
             </div>
           </a>
         
         
           
-          <a href="../02-docker-portainer/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 02 · Docker y Portainer">
+          <a href="../31-mantenimiento/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: 31 · Mantenimiento e incidencias">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
               </span>
               <div class="md-ellipsis">
-                02 · Docker y Portainer
+                31 · Mantenimiento e incidencias
               </div>
             </div>
             <div class="md-footer__button md-icon">
