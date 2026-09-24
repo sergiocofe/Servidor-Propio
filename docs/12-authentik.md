@@ -71,3 +71,11 @@ Define el usuario `akadmin` y su contraseña.
 !!! note "Compatibilidad"
     **Sí soportan SSO (OIDC):** Nextcloud, Portainer, BookStack, GLPI, Home Assistant, Immich, n8n.
     **Solo login nativo (sin SSO):** Jellyfin, Vaultwarden, qBittorrent, entre otros.
+
+!!! warning "Excluye su base de datos de Watchtower"
+    Añade al servicio `postgresql` del compose:
+    ```yaml
+        labels:
+          - com.centurylinklabs.watchtower.enable=false
+    ```
+    Un salto de versión mayor de PostgreSQL requiere migrar los datos a mano (ver [18 · Watchtower](18-watchtower.md)).

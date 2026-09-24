@@ -34,17 +34,28 @@ services:
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
       - /etc/os-release:/host/etc/os-release:ro
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - DOCKER_HOST=tcp://socket-proxy:2375   # nombres de contenedores vía proxy de solo lectura
+    networks:
+      - default
+      - socket_proxy
 
 volumes:
   netdataconfig:
   netdatalib:
   netdatacache:
+
+networks:
+  socket_proxy:
+    external: true
 ```
 
 ```bash
 docker compose up -d
 ```
+
+!!! note "Requisito previo"
+    Necesitas el proxy del socket desplegado antes (ver [02 · Docker y Portainer, apartado 5](02-docker-portainer.md#5-proxy-del-socket-de-docker-solo-lectura)).
 
 ---
 

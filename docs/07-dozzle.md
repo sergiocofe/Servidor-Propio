@@ -6,7 +6,7 @@ Dozzle es una herramienta extremadamente ligera para ver los **logs de tus conte
 
 ## 1. Despliegue del contenedor
 
-Como Portainer o Netdata, Dozzle se conecta al socket de Docker para leer los logs.
+Dozzle lee los logs a través del **proxy del socket de solo lectura** (ver [02 · Docker y Portainer, apartado 5](02-docker-portainer.md#5-proxy-del-socket-de-docker-solo-lectura)), no del socket real.
 
 ```bash
 mkdir -p ~/docker/dozzle && cd ~/docker/dozzle
@@ -18,11 +18,18 @@ services:
   dozzle:
     container_name: dozzle
     image: amir20/dozzle:latest
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - DOCKER_HOST=tcp://socket-proxy:2375
     ports:
       - 8888:8080
+    networks:
+      - default
+      - socket_proxy
     restart: unless-stopped
+
+networks:
+  socket_proxy:
+    external: true
 ```
 
 ```bash

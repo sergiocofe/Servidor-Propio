@@ -2,4 +2,5 @@ site/
 __pycache__/
 .venv/
 *.pyc
-.DS_Store
+.DS_Store*.env
+.env

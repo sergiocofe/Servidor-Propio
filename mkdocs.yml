@@ -1,8 +1,7 @@
 site_name: Servidor propio — Infraestructura blindada
 site_description: Guía paso a paso para desplegar servicios autoalojados y seguros con software libre
 site_author: Sergio
-site_url: https://sergiocofe.github.io/servidor-propio/
-# site_url lo ajustaremos en el paso de publicación
+site_url: https://sergiocofe.github.io/Servidor-Propio/
 
 theme:
   name: material
@@ -52,21 +51,41 @@ markdown_extensions:
       alternate_style: true
 
 nav:
-nav:
   - Inicio: index.md
-  - 01 · Proxmox y VM: 01-proxmox-y-vm.md
-  - 02 · Docker y Portainer: 02-docker-portainer.md
-  - 03 · Nginx Proxy Manager: 03-nginx-proxy-manager.md
-  - 04 · SSL con Step-CA: 04-ssl-step-ca.md
-  - 05 · Uptime Kuma: 05-uptime-kuma.md
-  - 06 · Netdata: 06-netdata.md
-  - 07 · Dozzle: 07-dozzle.md
-  - 08 · Homepage: 08-homepage.md
-  - 09 · AdGuard Home: 09-adguard-home.md
-  - 10 · Fail2ban: 10-fail2ban.md
-  - 11 · WireGuard (VPN): 11-wireguard.md
-  - 12 · Authentik (SSO): 12-authentik.md
-  - 13 · Vaultwarden: 13-vaultwarden.md
-  - 14 · Nextcloud: 14-nextcloud.md
-  - 15 · n8n: 15-n8n.md
-  - 16 · BorgBackup: 16-borgbackup.md
+  - Base:
+      - 01 · Proxmox y VM: 01-proxmox-y-vm.md
+      - 02 · Docker y Portainer: 02-docker-portainer.md
+      - 03 · Nginx Proxy Manager: 03-nginx-proxy-manager.md
+      - 04 · SSL con Step-CA: 04-ssl-step-ca.md
+      - 09 · AdGuard Home: 09-adguard-home.md
+  - Monitorización:
+      - 05 · Uptime Kuma: 05-uptime-kuma.md
+      - 06 · Netdata: 06-netdata.md
+      - 07 · Dozzle: 07-dozzle.md
+      - 08 · Homepage: 08-homepage.md
+  - Seguridad y acceso:
+      - 10 · Fail2ban: 10-fail2ban.md
+      - 11 · WireGuard (VPN): 11-wireguard.md
+      - 12 · Authentik (SSO): 12-authentik.md
+      - 13 · Vaultwarden: 13-vaultwarden.md
+      - 17 · CrowdSec y UFW: 17-crowdsec-ufw.md
+  - Automatización y copias:
+      - 15 · n8n: 15-n8n.md
+      - 16 · BorgBackup: 16-borgbackup.md
+      - 18 · Watchtower: 18-watchtower.md
+  - Aplicaciones:
+      - 14 · Nextcloud: 14-nextcloud.md
+      - 19 · Jellyfin: 19-jellyfin.md
+      - 20 · qBittorrent: 20-qbittorrent.md
+      - 21 · MeTube: 21-metube.md
+      - 22 · Audiobookshelf: 22-audiobookshelf.md
+      - 23 · Paperless-ngx: 23-paperless.md
+      - 24 · Immich: 24-immich.md
+      - 25 · Stirling PDF: 25-stirling-pdf.md
+      - 26 · Wallos: 26-wallos.md
+      - 27 · Grocy: 27-grocy.md
+      - 28 · IT-Tools: 28-it-tools.md
+      - 29 · Home Assistant: 29-home-assistant.md
+  - Referencia:
+      - 30 · Mapa de puertos: 30-mapa-de-puertos.md
+      - 31 · Mantenimiento e incidencias: 31-mantenimiento.md

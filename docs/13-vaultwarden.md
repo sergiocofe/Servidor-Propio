@@ -21,8 +21,9 @@ services:
     container_name: vaultwarden
     environment:
       DOMAIN: "https://vault.lan"
-      ADMIN_TOKEN: "Token_Admin_Vaultwarden"
       SIGNUPS_ALLOWED: "false"      # desactiva el registro abierto tras crear tu cuenta
+    env_file:
+      - .env                        # aquí vive el ADMIN_TOKEN (nunca en el compose)
     volumes:
       - ./data:/data
     ports:
@@ -34,11 +35,35 @@ services:
 docker compose up -d
 ```
 
-!!! tip "Generar el ADMIN_TOKEN"
-    ```bash
-    openssl rand -base64 48
-    ```
-    Ese valor protege el panel de administración en `https://vault.lan/admin`.
+### ADMIN_TOKEN (panel `/admin`) con hash Argon2
+
+El panel de administración (`https://vault.lan/admin`) se protege con `ADMIN_TOKEN`. Si lo dejas vacío, el panel queda **desactivado** (comportamiento seguro). Para activarlo, usa un **hash Argon2**, no un token en texto plano:
+
+```bash
+docker run --rm -it vaultwarden/server /vaultwarden hash
+```
+
+Te pide la contraseña de acceso a `/admin` y devuelve algo como `$argon2id$v=19$m=65540,t=3,p=4$...$...`.
+
+Guárdalo en el `.env`:
+
+```bash
+nano ~/docker/vaultwarden/.env
+```
+
+```ini
+ADMIN_TOKEN=$$argon2id$$v=19$$m=65540,t=3,p=4$$Hash_Sal_Vaultwarden$$Hash_Valor_Vaultwarden
+```
+
+!!! danger "Escapa cada `$` como `$$`"
+    Docker Compose **interpola también el `.env`**: cada `$` se interpretaría como una variable (`$v`, `$m`...) y el hash llegaría roto. Síntomas: avisos `WARN ... variable is not set` al hacer `docker compose up` y el log de Vaultwarden diciendo *"you are using a plain text ADMIN_TOKEN"*. La solución es duplicar **todos** los `$` del hash.
+
+Aplica y verifica:
+
+```bash
+docker compose up -d --force-recreate
+docker logs vaultwarden --tail 10   # sin WARN ni "plain text" = correcto
+```
 
 ## 2. Triángulo de configuración
 

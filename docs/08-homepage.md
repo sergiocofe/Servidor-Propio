@@ -8,7 +8,6 @@ Un panel de inicio (dashboard) convierte tu laboratorio en una herramienta profe
 
 ```bash
 mkdir -p ~/docker/homepage/config
-sudo chmod 666 /var/run/docker.sock
 # Asegurar que tu usuario es el dueño de la carpeta
 sudo chown -R Usuario_Ubuntu:Usuario_Ubuntu ~/docker/homepage
 cd ~/docker/homepage
@@ -26,16 +25,25 @@ services:
       - 3005:3000
     volumes:
       - ~/docker/homepage/config:/app/config
-      - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
       # Permitimos el acceso desde cualquier host de la red local
       HOMEPAGE_ALLOWED_HOSTS: "*"
+    networks:
+      - default
+      - socket_proxy
     restart: unless-stopped
+
+networks:
+  socket_proxy:
+    external: true
 ```
 
 ```bash
 docker compose up -d
 ```
+
+!!! warning "Sin acceso directo al socket"
+    Homepage **no** monta `/var/run/docker.sock` ni necesita `chmod 666`: lee el estado de los contenedores a través del proxy de solo lectura (ver [02 · Docker y Portainer, apartado 5](02-docker-portainer.md#5-proxy-del-socket-de-docker-solo-lectura)).
 
 ---
 
@@ -62,7 +70,8 @@ nano ~/docker/homepage/config/docker.yaml
 
 ```yaml
 my-docker:
-  socket: /var/run/docker.sock
+  host: socket-proxy   # nombre del contenedor del proxy (red socket_proxy)
+  port: 2375
 ```
 
 ### B · Ajustes visuales
